@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elias Arnold</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: 1000;
+        }
+        
+
+        .Titelbild{
+            height: 110vh;
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+             mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            margin-bottom: -50px;
+        }
+
+        .container{
+            background-color: transparent;
+            position: fixed;
+            right: 50px;
+            top: 32px;
+            font-size: 30px;
+        }
+
+        .menu-link{
+            color: black;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .menu-link:hover{
+            background-color: rgba(0, 63, 179, 0.384);
+            padding: 10px 30px;
+            border-radius: 8px;
+            box-shadow: 5px 5px rgba(0,0,0,0.5);
+        } 
+
+        .containerTitel{
+            color: black;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-size: 35px;
+            text-shadow: 5px 5px rgba(0,0,0,0.5);
+        }
+
+        .Bild-Resultate{
+            height: 50vh;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .bild-link-container:hover .Bild-Resultate {
+            transform: scale(1.1);
+        }
+
+        .bild-link-container{
+            position: absolute;
+            left: 450px;
+            top: 1100px;
+            width: auto;
+        }
+
+        .bild-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Perfekt zentrieren */
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+            border-radius: 8px;
+            padding: 10px 20px;
+            pointer-events: none; /* Klick geht durch den Text aufs Bild */
+            opacity: 0; /* Erst unsichtbar */
+            transition: opacity 0.8s ease;
+        }
+
+        .bild-link-container:hover .bild-text{
+            opacity: 1;
+        }
+
+        .Bild-über-mich{
+            height: 40vh;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .bild-link-container2:hover .Bild-über-mich {
+            transform: scale(1.1);
+        }
+
+        .bild-link-container2{
+            position: absolute;
+            left: 950px;
+            top: 1100px;
+            width: auto;
+        }
+
+        .bild-text2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Perfekt zentrieren */
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+            border-radius: 8px;
+            padding: 10px 20px;
+            pointer-events: none; /* Klick geht durch den Text aufs Bild */
+            opacity: 0; /* Erst unsichtbar */
+            transition: opacity 0.8s ease;
+        }
+
+        .bild-link-container2:hover .bild-text2{
+            opacity: 1;
+        }
+
+               .BildSocial{
+            height: 40vh;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .bild-link-container3:hover .BildSocial {
+            transform: scale(1.1);
+        }
+
+        .bild-link-container3{
+            position: absolute;
+            left: 350px;
+            top: 1600px;
+            width: auto;
+        }
+
+        .bild-text3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Perfekt zentrieren */
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+            border-radius: 8px;
+            padding: 10px 20px;
+            pointer-events: none; /* Klick geht durch den Text aufs Bild */
+            opacity: 0; /* Erst unsichtbar */
+            transition: opacity 0.8s ease;
+        }
+
+        .bild-link-container3:hover .bild-text3{
+            opacity: 1;
+        }
+
+        .BildSponsoren{
+            height: 35vh;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .bild-link-container4:hover .BildSponsoren {
+            transform: scale(1.1);
+        }
+
+        .bild-link-container4{
+            position: absolute;
+            left: 950px;
+            top: 1500px;
+            width: auto;
+        }
+
+        .bild-text4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Perfekt zentrieren */
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+            border-radius: 8px;
+            padding: 10px 20px;
+            pointer-events: none; /* Klick geht durch den Text aufs Bild */
+            opacity: 0; /* Erst unsichtbar */
+            transition: opacity 0.8s ease;
+        }
+
+        .bild-link-container4:hover .bild-text4{
+            opacity: 1;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        @media(max-width: 805px){
+            .container {
+                display: none;
+            }
+        }
+
+        .Logo{
+            position: fixed;
+            left: 30px;
+            top: 30px;
+            height: 90px;
+        }
+
+        .main-footer {
+            background-color: #333333; /* Ein sehr dunkles Grau, fast Schwarz */
+            color: white;              /* Macht den Text weiß, damit man ihn sieht */
+            padding: 100px 20px;        /* Abstand nach oben/unten und links/rechts */
+            margin-top: 1200px;          /* Abstand zum Inhalt darüber */
+            width: 97.85%;               /* Geht über die volle Breite */
+        }
+
+        .footer-content {
+            text-align: left;
+             padding-left: 20px;        /* Zentriert Text und Bilder im Footer */
+        }
+       
+
+    </style>
+  </head>
+  <body>
+    <img class="Titelbild" src="/img/Titelbild-Quer.png">
+    <div class="containerTitel">
+        <h1>Elias Arnold</h1>
+    </div>
+    <a href="Index.html">
+        <img class="Logo" src="/img/Elias Logo.png">
+    </a>
+    <div class="bild-link-container">
+        <a href="resultate.html">
+            <img class="Bild-Resultate" src="/img/Bild-Reusltate.jpg">
+            <div class="bild-text">Resultate</div>
+        </a>
+    </div>
+
+    <div class="bild-link-container2">
+        <a href="über-mich.html">
+            <img class="Bild-über-mich" src="/img/EliasFlug.jpeg">
+            <div class="bild-text2">Über mich</div>
+        </a>
+
+    </div>
+    
+    <div class="bild-link-container3">
+        <a href="Social.html">
+            <img class="BildSocial" src="/img/TitelbildSocial.jpeg">
+            <div class="bild-text3">Social</div>
+        </a>
+    </div>
+    
+    <div class="bild-link-container4">
+        <a href="über-mich.html">
+            <img class="BildSponsoren" src="/img/LogoSponsoren.png">
+            <div class="bild-text4">Sponsoren</div>
+        </a>
+    </div>
+    
+    
+    
+    
+    
+    
+    <a href="Index.html">
+        <img class="Logo" src="/img/Elias Logo.png">
+    </a>
+    <div class="container">   
+        <a class="menu-link" href="resultate.html">Resultate</a>
+        <a class="menu-link" href="über-mich.html">Über Mich</a>
+        <a class="menu-link" href="Sponsoren.html">Sponsoren</a>
+        <a class="menu-link" href="Fotos.html">Fotos</a>
+        <a class="menu-link" href="Social.html">Social</a>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>Copyright © 2026 – Elias Arnold</p>
+        </div>
+    </footer>
+  </body>
+</html>
