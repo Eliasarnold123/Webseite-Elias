@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: 1000;
+        }
+        
+        .TitelbildResultate{
+            height: 110vh;
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+             mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            margin-bottom: -50px;
+        }
+
+        .Resultate{
+            position: absolute;
+            left: 500px;
+            top: 1200px;
+            font-size: 18px;
+        }
+
+        .main-footer {
+            background-color: #333333; /* Ein sehr dunkles Grau, fast Schwarz */
+            color: white;              /* Macht den Text weiß, damit man ihn sieht */
+            padding: 100px 20px;        /* Abstand nach oben/unten und links/rechts */
+            margin-top: 1000px;          /* Abstand zum Inhalt darüber */
+            width: 97.85%;               /* Geht über die volle Breite */
+        }
+
+        .footer-content {
+            text-align: left;
+             padding-left: 20px;        /* Zentriert Text und Bilder im Footer */
+        }
+
+        .Resultate2{
+            position: absolute;
+            right: 500px;
+            top: 1200px;
+            font-size: 18px;
+        }
+
+        .container{
+            background-color: transparent;
+            position: fixed;
+            right: 50px;
+            top: 32px;
+            font-size: 30px;
+        }
+
+
+        .menu-link{
+            color: black;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .menu-link:hover{
+            background-color: rgba(0, 63, 179, 0.384);
+            padding: 10px 30px;
+            border-radius: 8px;
+            box-shadow: 5px 5px rgba(0,0,0,0.5);
+        }
+
+        .container2{
+            background-color: transparent;
+            position: fixed;
+            left: 850px;
+            top: 32px;
+            font-size: 30px;
+        }
+
+        .menu-link-home{
+            color: black;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .menu-link-home:hover{
+            background-color: rgba(0, 63, 179, 0.384);
+            padding: 10px 30px;
+            border-radius: 8px;
+            box-shadow: 5px 5px rgba(0,0,0,0.5);
+        }
+
+        .Logo{
+            position: fixed;
+            left: 30px;
+            top: 30px;
+            height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <img class="TitelbildResultate" src="img/Bild-Resultate-titel.jpg">
+    <div class="Resultate">
+        <h2>2023/24</h2>
+        <ul>
+            <li>72. Rang Alpen Cup Kandersteg</li>
+            <li>73. Rang Alpen Cup Kandersteg</li>
+            <li>73. Rang Alpen Cup Planica</li>
+            <li>67. Rang Alpen Cup Planica</li>
+        </ul>
+        <h2>2024/25</h2>
+        <ul>
+            <li>45. Rang Alpen Cup Oberhof</li>
+            <li>59. Rang Alpen Cup Oberhof</li>
+            <li>79. Rang Fis Cup Oberhof</li>
+            <li>78. Rang Fis Cup Oberhof</li>
+            <li>77. Rang Alpen Cup Seefeld</li>
+            <li>58. Rang Fis Cup Kandersteg</li>
+            <li>35. Rang Alpen Cup Oberwiesenthal</li>
+            <li>47. Rang Alpen Cup Liberec</li>
+            <li>52. Rang Alpen Cup Liberec</li>
+            <li>49. Rang Alpen Cup Hinterzarten</li>
+            <li>67. Rang Alpen Cup Hinterzarten</li>
+        </ul>
+    </div>
+    <div class="Resultate2">
+        <h2>2025/26</h2>
+        <ul>
+            <li>7. Rang Team JWM Lillehammer</li>
+            <li>34. Rang JWM Lillehammer</li>
+            <li>12. Rang Alpen Cup Zakopane</li>
+            <li>14. Rang Alpen Cup Zakopane</li>
+            <li>59. Rang Continental Cup Lillehammer</li>
+            <li>55. Rang Continental Cup Lillehammer</li>
+            <li>18. Rang Alpen Cup Kranj</li>
+            <li>17. Rang Alpen Cup Kranj</li>
+            <li>5. Rang Alpen Cup Chaux-Neuve</li>
+            <li>55. Rang Continental Cup Engelberg</li>
+            <li>44. Rang Continental Cup Engelberg</li>
+            <li>18. Rang Alpen Cup Seefeld</li>
+            <li>58. Rang Alpen Cup Seefeld</li>
+            <li>20. Rang Fis Cup Kandersteg</li>
+            <li>19. Rang Fis Cup Kandersteg</li>
+            <li>27. Rang Alpen Cup Einsiedeln</li>
+            <li>40. Rang Alpen Cup Einsiedeln</li>
+            <li>23. Rang Alpen Cup Oberstdorf</li>
+            <li>25. Rang Alpen Cup Oberstdorf</li>
+            <li>50. Rang Fis Cup Einsiedeln</li>
+        </ul>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>Copyright © 2026 – Elias Arnold</p>
+        </div>
+    </footer>
+    <a href="Index.html">
+        <img class="Logo" src="img/EliasLogo.png">
+    </a>
+    </div>
+    <div class="container">   
+        <a class="menu-link" href="resultate.html">Resultate</a>
+        <a class="menu-link" href="über-mich.html">Über Mich</a>
+        <a class="menu-link" href="Sponsoren.html">Sponsoren</a>
+        <a class="menu-link" href="Fotos.html">Fotos</a>
+        <a class="menu-link" href="Social.html">Social</a>
+    </div>
+    <div class="container2">
+        <a class="menu-link-home" href="index.html">Home</a>
+    </div>
+</body>
+</html>
